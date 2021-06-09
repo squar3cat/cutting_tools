@@ -1,0 +1,178 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #e9ecef!important;
+    height: 100%;
+    padding: 0!important;
+    font-family: "Montserrat";
+    /*font-size: small!important;*/
+}
+
+.modal-open {
+    overflow: initial!important;
+}
+
+tr[data-toolDeficient="false"] {
+    color: black;
+}
+
+tr[data-toolDeficient="true"] {
+    color: red;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+tr[data-userEnabled="false"] {
+    opacity: 0.3;
+}
+
+.error, .message {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.error {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+}
+
+.message {
+    color: #2f9635;
+    background-color: #c6fbc2;
+    border: 1px solid #9feba6;
+}
+
+.close {
+    color: #fff!important;
+    text-shadow: 0 1px 0 #fff!important;
+    font-size: medium;
+}
+
+.container {
+    min-width: 1350px!important;
+}
+
+.container, .modal {
+    font-family: "Montserrat";
+    font-size: small!important;
+}
+
+form select, form input, button:not(.close){
+    font-size: small!important;
+}
+
+.form-group {
+    margin-bottom: 0rem!important;
+}
+
+.dt-body-center{
+    text-align: center;
+}
+
+.table td, .table th {
+    vertical-align: middle!important;
+}
+
+.table th {
+    text-align: center!important;
+    font-size: small;
+    height: 56px;
+}
+
+.table td {
+    font-size: small;
+    padding: .5rem!important;
+    height: 47px;
+}
+
+table.dataTable {
+    width: 100% !important;
+}
+
+#datatable_wrapper {
+    width: 100% !important;
+}
+
+.dataTable thead .sorting:before,
+.dataTable thead .sorting:after,
+.dataTable thead .sorting_asc:before,
+.dataTable thead .sorting_asc:after,
+.dataTable thead .sorting_desc:before,
+.dataTable thead .sorting_desc:after,
+.dataTable thead .sorting_asc_disabled:before,
+.dataTable thead .sorting_asc_disabled:after,
+.dataTable thead .sorting_desc_disabled:before,
+.dataTable thead .sorting_desc_disabled:after {
+    font-family: Arial;
+}
+
+.page_tools.dataTable thead .sorting:before,
+.page_tools.dataTable thead .sorting:after,
+.page_tools.dataTable thead .sorting_asc:before,
+.page_tools.dataTable thead .sorting_asc:after,
+.page_tools.dataTable thead .sorting_desc:before,
+.page_tools.dataTable thead .sorting_desc:after,
+.page_tools.dataTable thead .sorting_asc_disabled:before,
+.page_tools.dataTable thead .sorting_asc_disabled:after,
+.page_tools.dataTable thead .sorting_desc_disabled:before,
+.page_tools.dataTable thead .sorting_desc_disabled:after {
+    bottom: 1.6em!important;
+}
+
+.page_types.dataTable thead .sorting:before,
+.page_types.dataTable thead .sorting:after,
+.page_types.dataTable thead .sorting_asc:before,
+.page_types.dataTable thead .sorting_asc:after,
+.page_types.dataTable thead .sorting_desc:before,
+.page_types.dataTable thead .sorting_desc:after,
+.page_types.dataTable thead .sorting_asc_disabled:before,
+.page_types.dataTable thead .sorting_asc_disabled:after,
+.page_types.dataTable thead .sorting_desc_disabled:before,
+.page_types.dataTable thead .sorting_desc_disabled:after {
+    bottom: 1em!important;
+}
+
+.page_users.dataTable thead .sorting:before,
+.page_users.dataTable thead .sorting:after,
+.page_users.dataTable thead .sorting_asc:before,
+.page_users.dataTable thead .sorting_asc:after,
+.page_users.dataTable thead .sorting_desc:before,
+.page_users.dataTable thead .sorting_desc:after,
+.page_users.dataTable thead .sorting_asc_disabled:before,
+.page_users.dataTable thead .sorting_asc_disabled:after,
+.page_users.dataTable thead .sorting_desc_disabled:before,
+.page_users.dataTable thead .sorting_desc_disabled:after {
+    bottom: 1em!important;
+}
+
+.page_locations.dataTable thead .sorting:before,
+.page_locations.dataTable thead .sorting:after,
+.page_locations.dataTable thead .sorting_asc:before,
+.page_locations.dataTable thead .sorting_asc:after,
+.page_locations.dataTable thead .sorting_desc:before,
+.page_locations.dataTable thead .sorting_desc:after,
+.page_locations.dataTable thead .sorting_asc_disabled:before,
+.page_locations.dataTable thead .sorting_asc_disabled:after,
+.page_locations.dataTable thead .sorting_desc_disabled:before,
+.page_locations.dataTable thead .sorting_desc_disabled:after {
+    bottom: 1em!important;
+}
+
+option:disabled {
+    background: #cccccc;
+    color: #898d92;
+}
+
+@font-face {
+font-family: "Montserrat";
+src: url("../fonts/MontserratRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}

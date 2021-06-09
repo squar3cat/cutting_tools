@@ -1,0 +1,173 @@
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: #252323;
+    position: fixed;
+    height: 50px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 50px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: #252323;
+    z-index: 99;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: none;
+    font-weight: normal;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.sidebarMenuInner li a:hover {
+    color: #a3a3a3;
+}
+
+hr {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li i{
+    margin-right: 10px;
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size: 11pt;
+}
+
+.sidebarMenuInner button {
+    font-family: "Montserrat";
+    font-size: 11pt!important;
+    border: #252323;
+    margin-left: 4px;
+}
+
+.sidebarMenuInner button:hover {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.sidebarMenuInner button,
+.sidebarMenuInner button:hover,
+.sidebarMenuInner button:active,
+.sidebarMenuInner button:focus {
+    outline: none!important;
+    box-shadow: none!important;
+    transition: 0s;
+    background-color: #252323!important;
+}
+
+.sidebarMenuInner button span {
+    margin-right: 3px;
+}
+
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+#openSidebarMenu  {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 16px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
